@@ -1,0 +1,72 @@
+// Ideas for implementation
+// One main functional component
+// Two autocompletion inputs
+// A button
+// Send the info to the map component
+//      Use a Callback props
+//          a handler that wrapp over a setState of HomePage
+// The list of all the potential town
+import TextInput from 'react-autocomplete-input';
+import 'react-autocomplete-input/dist/bundle.css';
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+
+function SearchBar(props) {
+
+    const [cities, setCities] = useState([]);
+
+    useEffect( ()=> {
+        async function fetchDate(){
+            const requestCities = await axios.get("http://localhost:2727/api/cities/source");
+            setCities(requestCities.data.data);
+        }
+        fetchDate();
+    },[]);
+
+    const getCities = () =>
+    {
+        try{
+            let names = [];
+            cities.forEach(cities => {
+                names.push(cities.name + "; " + cities.zip_code);
+            } );
+            return names;
+        }
+        catch{
+            return [];
+        }
+        
+    }
+
+    const formHandler = (event) => 
+    {
+        event.preventDefault();
+        console.log("form !");
+    }
+    return (
+        <>
+        <form onSubmit={formHandler}>
+        <label>Départ</label>
+        <TextInput
+            name = "start"
+            Component="input"
+            trigger={[""]} 
+            options={getCities()} 
+            minChars={1}
+        />
+        <label>Destionnation</label>
+        <TextInput
+            name = "destination"
+            Component="input"
+            trigger={[""]} 
+            options={getCities()} 
+            minChars={1}
+        />
+        <input type="submit" value="Envoyer"/>
+        </form>
+        
+        </>
+    );
+  }
+
+  export default SearchBar;

@@ -1,0 +1,15 @@
+
+    
+
+React
+npm i react-autocomplete-input
+npm install axios
+    Non utilisé au final
+        npm install algoliasearch @algolia/autocomplete-js
+        npm install sqlite3
+
+Express
+npm install express
+npm install sqlite3
+npm install md5
+npm install cors
