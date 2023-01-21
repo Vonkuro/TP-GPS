@@ -1,0 +1,60 @@
+[
+    {
+        "id": 685,
+        "locationId": "lillesupercharger",
+        "name": "Lille, France",
+        "status": "OPEN",
+        "address": {
+            "street": "55 route de Douai Lesquin",
+            "city": "Lille",
+            "state": null,
+            "zip": "59810",
+            "countryId": 110,
+            "country": "France",
+            "regionId": 101,
+            "region": "Europe"
+        },
+        "gps": {
+            "latitude": 50.583875,
+            "longitude": 3.088602
+        },
+        "dateOpened": "2015-08-14",
+        "stallCount": 16,
+        "counted": true,
+        "elevationMeters": 58,
+        "powerKilowatt": 150,
+        "solarCanopy": false,
+        "battery": false,
+        "statusDays": 0,
+        "urlDiscuss": false
+    },
+    {
+        "id": 668,
+        "locationId": "rungissupercharger",
+        "name": "Rungis, France",
+        "status": "OPEN",
+        "address": {
+            "street": "Novotel Paris Orly Rungis 1 Rue du pont des halles",
+            "city": "Rungis",
+            "state": null,
+            "zip": "94150",
+            "countryId": 110,
+            "country": "France",
+            "regionId": 101,
+            "region": "Europe"
+        },
+        "gps": {
+            "latitude": 48.754456,
+            "longitude": 2.351036
+        },
+        "dateOpened": "2015-08-01",
+        "stallCount": 6,
+        "counted": true,
+        "elevationMeters": 89,
+        "powerKilowatt": 150,
+        "solarCanopy": false,
+        "battery": false,
+        "statusDays": 0,
+        "urlDiscuss": false
+    }
+]
