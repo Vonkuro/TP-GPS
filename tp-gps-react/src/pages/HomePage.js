@@ -1,6 +1,6 @@
 import SearchBar from "./searchbar/SearchBar";
 import React from "react";
-import MeteoDisplay from "./infodisplay/meteoDisplay/MeteoDisplay";
+import InfoDisplay from "./infodisplay/InfoDisplay";
 
 class HomePage extends React.Component
 {
@@ -10,7 +10,7 @@ class HomePage extends React.Component
         return (
         <>
             <SearchBar/>
-            <MeteoDisplay city="Cuges-les-pins" latitude={43} longitude={5}/>
+            <InfoDisplay/>
         </>
         );
     };
