@@ -10,7 +10,7 @@ Ce TP est une application permettant de calculer un itinéraire entre deux ville
 - 🚀 [Installation](#installation)
 - 🛠️ [Utilisation](#utilisation)
 - 🏗️ [Construit avec](#construit-avec)
-- 📚 [Langages & Framework](#langages-&-framework)
+- 📚 [Langages & Frameworks](#langages-&-frameworks)
 
 
 ## Prérequis
