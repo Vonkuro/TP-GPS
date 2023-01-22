@@ -72,37 +72,44 @@ function SearchBar(props) {
         }
     }
     return (
-        <div className='searchContainer'>
-        <form onSubmit={formHandler} >
-            <div class="form-floating">
-            <TextInput
-                id="start"
-                class="form-control"
-                name = "start"
-                Component="input"
-                trigger={[""]} 
-                options={getCities()} 
-                minChars={1}
-                onSelect = {(value) =>{startHandler(value)}}
-            />
-            <label for="start">Départ</label>
-            </div>
-            <div class="form-floating">
-            <TextInput
-                id="end"
-                class="form-control"
-                name = "destination"
-                Component="input"
-                trigger={[""]} 
-                options={getCities()} 
-                minChars={1}
-                onSelect = {(value) =>{endHandler(value)}}
-            />
-            <label for="end">Destionnation</label>
-            </div>
-            <input type="submit" value="Voyager"/>
-        </form>
-        
+        <div className='searchContainer container '>
+            <form onSubmit={formHandler} >
+                <div class="row g-2 align-items-center justify-content-evenly">
+                    <div class="col-md">
+                        <div class="form-floating">
+                            <TextInput
+                                id="start"
+                                class="form-control"
+                                name = "start"
+                                Component="input"
+                                trigger={[""]} 
+                                options={getCities()} 
+                                minChars={1}
+                                onSelect = {(value) =>{startHandler(value)}}
+                            />
+                            <label for="start">Départ</label>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="form-floating">
+                            <TextInput
+                                id="end"
+                                class="form-control"
+                                name = "destination"
+                                Component="input"
+                                trigger={[""]} 
+                                options={getCities()} 
+                                minChars={1}
+                                onSelect = {(value) =>{endHandler(value)}}
+                            />
+                            <label for="end">Destionnation</label>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <input class="btn btn-success btn-lg" type="submit" value="Voyager"/>
+                    </div>
+                </div>
+            </form>
         </div>
     );
   }
