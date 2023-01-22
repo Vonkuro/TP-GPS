@@ -33,7 +33,7 @@ class HomePage extends React.Component
                 <Map coordinate= {this.state.coordinate}/>
             </div>
             <div className="rightContainer">
-                <InfoDisplay/>
+                <InfoDisplay coordinate= {this.state.coordinate}/>
             </div>
         </div>
         

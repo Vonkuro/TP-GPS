@@ -6,8 +6,8 @@ function InfoDisplay(props)
 
     return(
         <>
-        <MeteoDisplay city="Cuges-les-pins" latitude={43} longitude={5}/>    
-        <MeteoDisplay city="Cuges-les-pins" latitude={43} longitude={5}/>
+        <MeteoDisplay city={props.coordinate[0][0]} latitude={props.coordinate[0][1]} longitude={props.coordinate[0][2]}/>    
+        <MeteoDisplay city={props.coordinate[1][0]} latitude={props.coordinate[1][1]} longitude={props.coordinate[1][2]}/>
         </>
     )
 }

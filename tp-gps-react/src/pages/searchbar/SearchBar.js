@@ -49,7 +49,6 @@ function SearchBar(props) {
 
     const startHandler = (value) =>
     {
-        console.log(value);
         setStartCity(localFinder(value));
     }
 
