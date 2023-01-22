@@ -11,6 +11,10 @@ import 'react-autocomplete-input/dist/bundle.css';
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./SearchBar.css";
+// Bootstrap CSS
+import "bootstrap/dist/css/bootstrap.min.css";
+// Bootstrap Bundle JS
+import "bootstrap/dist/js/bootstrap.bundle.min";
 
 function SearchBar(props) {
 
@@ -69,26 +73,34 @@ function SearchBar(props) {
     }
     return (
         <div className='searchContainer'>
-        <form onSubmit={formHandler}>
-        <label>Départ</label>
-        <TextInput
-            name = "start"
-            Component="input"
-            trigger={[""]} 
-            options={getCities()} 
-            minChars={1}
-            onSelect = {(value) =>{startHandler(value)}}
-        />
-        <label>Destination</label>
-        <TextInput
-            name = "destination"
-            Component="input"
-            trigger={[""]} 
-            options={getCities()} 
-            minChars={1}
-            onSelect = {(value) =>{endHandler(value)}}
-        />
-        <input type="submit" value="Voyager"/>
+        <form onSubmit={formHandler} >
+            <div class="form-floating">
+            <TextInput
+                id="start"
+                class="form-control"
+                name = "start"
+                Component="input"
+                trigger={[""]} 
+                options={getCities()} 
+                minChars={1}
+                onSelect = {(value) =>{startHandler(value)}}
+            />
+            <label for="start">Départ</label>
+            </div>
+            <div class="form-floating">
+            <TextInput
+                id="end"
+                class="form-control"
+                name = "destination"
+                Component="input"
+                trigger={[""]} 
+                options={getCities()} 
+                minChars={1}
+                onSelect = {(value) =>{endHandler(value)}}
+            />
+            <label for="end">Destionnation</label>
+            </div>
+            <input type="submit" value="Voyager"/>
         </form>
         
         </div>
