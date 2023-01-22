@@ -7,7 +7,6 @@ import Map from './map/Map';
 
 class HomePage extends React.Component
 {
-
     render()
     {
         return (

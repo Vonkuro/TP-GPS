@@ -14,7 +14,6 @@ function MeteoDisplay(props)
             const querryMeteo = "https://public.opendatasoft.com/api/records/1.0/search/?dataset=arome-0025-sp1_sp2&q=&rows=1&geofilter.distance="+latitude+"%2C"+longitude+"%2C1";
 
             const requestMeteo = await axios.get(querryMeteo);
-            console.log(requestMeteo.data.records[0].fields);
 
             let newWind = requestMeteo.data.records[0].fields["10m_wind_speed"];
             newWind = roundWithDecimal(newWind,2);
