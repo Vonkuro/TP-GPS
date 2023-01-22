@@ -17,15 +17,12 @@ function MeteoDisplay(props)
             const requestMeteo = await axios.get(querryMeteo);
 
             let newWind = requestMeteo.data.records[0].fields["10m_wind_speed"];
-            console.log(newWind);
             newWind = roundWithDecimal(newWind,2);
 
             let newPrecipitations = requestMeteo.data.records[0].fields.total_precipitation;
-            console.log(newPrecipitations);
             newPrecipitations = roundWithDecimal(newPrecipitations,1);
 
             let newTemperature = requestMeteo.data.records[0].fields.minimum_temperature_at_2_metres;
-            console.log(newTemperature);
             newTemperature = roundWithDecimal(newTemperature,1);
 
             setWind(newWind);
