@@ -102,7 +102,7 @@ function SearchBar(props) {
                                 minChars={1}
                                 onSelect = {(value) =>{endHandler(value)}}
                             />
-                            <label for="end">Destionnation</label>
+                            <label for="end">Destination</label>
                         </div>
                     </div>
                     <div class="col-md">

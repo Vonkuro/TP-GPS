@@ -48,11 +48,13 @@ function MeteoDisplay(props)
 
     return (
         <>
-        <div className="meteo">
-        <p>Météo à {props.city}</p>
-        <p>Température : {temperature}°C</p>
-        <p>Précipitations : {precipitations}%</p>
-        <p>Vitesse du vent : {wind}m/s</p>
+        <div className="card meteo">
+            <div class="card-body">
+            <h3 class="card-title">Météo à {props.city}</h3>
+            <h5>Température : {temperature}°C</h5>
+            <h5>Précipitations : {precipitations}%</h5>
+            <h5>Vitesse du vent : {wind}m/s</h5>
+            </div>
         </div>
         </>
     );
