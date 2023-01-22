@@ -3,7 +3,6 @@
 ## À propos
 Ce TP est une application permettant de calculer un itinéraire entre deux villes et d'afficher la météo de la ville de départ et d'arrivée. 
 
-[Courte description à propos de pourquoi le projet existe]
 ## Table des matières
 
 - 🪧 [À propos](#à-propos)
@@ -38,7 +37,7 @@ Gaëtan Tiberghien
 Kevin Makhloufi
 
 ### Langages & Frameworks
-Javascript
+Javascript ####
 React
 Bootstrap 5
 Leaflet : https://www.openstreetmap.org/copyright
