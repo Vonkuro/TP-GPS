@@ -28,21 +28,21 @@ En premier lieu, il faut installer les paquets node dans le dossier "tp-gps-reac
 
 Dans ce dossier, lancer la commande : 
 
-npm update
+- npm update
 
 Puis rentrer dans le dossier "node-express" et lancer la commande : 
 
-npm update
+- npm update
 
 
 Lancement du service :
 Premièrement, ouvrez un terminal dans le dossier "node-express" et lancez la commande :
 
-npm start
+- npm start
 
 Puis, dans un second terminal, ouvrez le dossier "tp-gps-react" et lancez la commande :
 
-npm start
+- npm start
 
 L'url par défaut du service est : http://localhost:3000/
 
@@ -64,7 +64,11 @@ Javascript
 
 React
 
+SQLite 3
+
 Bootstrap 5
+
+npm-autocomplete
 
 API Carte : Leaflet, https://www.openstreetmap.org/copyright
 
