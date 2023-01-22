@@ -60,7 +60,7 @@ Gaëtan Tiberghien
 
 Kevin Makhloufi
 
-## Langages & Frameworks & API
+## Langages, Frameworks et API
 
 Javascript
 
