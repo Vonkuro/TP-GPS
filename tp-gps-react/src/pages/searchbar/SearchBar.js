@@ -44,8 +44,6 @@ function SearchBar(props) {
     const formHandler = (event) => 
     {
         event.preventDefault();
-        console.log(startCity);
-        console.log(endCity);
         props.handler([startCity,endCity]);
     }
 

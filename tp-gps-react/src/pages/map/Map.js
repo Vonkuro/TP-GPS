@@ -6,7 +6,6 @@ import Routing from './Routing';
 
 function Map(props){
     const positionLille = [50.629250, 3.057256]
-    console.log (props.coordinate);
     return (
         
         <div className='mapContainer'>
