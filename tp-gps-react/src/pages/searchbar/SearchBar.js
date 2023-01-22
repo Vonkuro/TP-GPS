@@ -31,7 +31,7 @@ function SearchBar(props) {
         try{
             let names = [];
             cities.forEach(cities => {
-                names.push(cities.name + ": " + cities.zip_code);
+                names.push(cities.name + ": " + cities.insee_code);
             } );
             return names;
         }
@@ -44,10 +44,14 @@ function SearchBar(props) {
     const formHandler = (event) => 
     {
         event.preventDefault();
+        console.log(startCity);
+        console.log(endCity);
+        props.handler([startCity,endCity]);
     }
 
     const startHandler = (value) =>
     {
+        console.log(value);
         setStartCity(localFinder(value));
     }
 
@@ -60,7 +64,7 @@ function SearchBar(props) {
     {
         for (const index in cities)
         {
-            if (value.includes(cities[index].zip_code))
+            if (value.includes(cities[index].insee_code))
             {
                 return [cities[index].name, cities[index].gps_lat, cities[index].gps_lng];
             }

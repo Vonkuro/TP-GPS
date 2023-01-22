@@ -37,7 +37,7 @@ app.get("/api/cities/all", (req, res, next) => {
 });
 
 app.get("/api/cities/source", (req, res, next) => {
-    var sql = "select id, name, zip_code, gps_lat, gps_lng from cities"
+    var sql = "select id, name, insee_code, gps_lat, gps_lng from cities"
     var params = []
     db.all(sql, params, (err, rows) => {
         if (err) {

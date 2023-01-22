@@ -5,7 +5,6 @@ import { MapContainer, TileLayer,Marker, Popup } from 'react-leaflet';
 import Routing from './Routing';
 
 function Map(){
-    console.log(cities)
     const positionLille = [50.629250, 3.057256]
     return (
         
