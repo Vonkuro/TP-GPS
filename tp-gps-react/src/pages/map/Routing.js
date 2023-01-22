@@ -16,7 +16,10 @@ export default function Routing(props) {
 
     const routingControl = L.Routing.control({
       waypoints: [L.latLng(props.start[1],props.start[2]), L.latLng(props.end[1],props.end[2])],
-      routeWhileDragging: true
+      routeWhileDragging: true,
+      collapsible: true,
+      autoRoute: true,
+      language : 'fr'
     }).addTo(map);
 
     return () => map.removeControl(routingControl);

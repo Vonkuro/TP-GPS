@@ -1,11 +1,28 @@
 .leaflet-container{
-    width: 60vw;
-    height: 60vh;
+  width: 60vw;
+  height: 100vh;
+  border-radius: 12px;
+  border: 1px solid;
+  border-color: red;
+}
+
+
+.leaflet-bar .leaflet-routing-alt:last-child{
+
+  height: 150px;
+
   }
 
-  .mapContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  .leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar{
+    width: 250px;
   }
+  
+
+
+.mapContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}

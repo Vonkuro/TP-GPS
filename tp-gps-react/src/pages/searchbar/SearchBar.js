@@ -79,7 +79,7 @@ function SearchBar(props) {
             minChars={1}
             onSelect = {(value) =>{startHandler(value)}}
         />
-        <label>Destionnation</label>
+        <label>Destination</label>
         <TextInput
             name = "destination"
             Component="input"
