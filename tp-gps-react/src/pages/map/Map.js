@@ -9,7 +9,7 @@ function Map(){
     const positionLille = [50.629250, 3.057256]
     return (
         
-
+        <div className='mapContainer'>
         <MapContainer center={positionLille} zoom={13} scrollWheelZoom={false}>
             <TileLayer
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -25,6 +25,7 @@ function Map(){
             
             
         </MapContainer>
+        </div>
 
     )
 
