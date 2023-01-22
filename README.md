@@ -9,7 +9,7 @@ Ce TP est une application permettant de calculer un itinéraire entre deux ville
 - 📦 [Prérequis](#prérequis)
 - 🚀 [Installation](#installation)
 - 🛠️ [Utilisation](#utilisation)
-- 🏗️ [Construit par](#construit-par)
+- 🏗️ [Developpé par](#developpé-par)
 - 📚 [Langages & Frameworks & API](#langages-&-frameworks-&-API)
 
 
@@ -54,7 +54,7 @@ Pour utiliser cette application, il suffit à l'utilisateur de choisir une adres
 champs prévus à cet effet, il suffit de valider en cliquant sur le bouton "envoyer".
 L'itinéraire et la météo des villes correspondantes s'afficheront en plus des indications liées au trajet.
 
-## Construit par
+## Développé par
 
 Gaëtan Tiberghien
 
