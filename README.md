@@ -44,7 +44,9 @@ Puis, dans un second terminal, ouvrez le dossier "tp-gps-react" et lancez la com
 
 - npm start
 
-L'url par défaut du service est : http://localhost:3000/
+L'url par défaut du service est : 
+
+- http://localhost:3000/
 
 ## Utilisation
 
@@ -69,6 +71,8 @@ SQLite 3
 Bootstrap 5
 
 npm-autocomplete
+
+Axios
 
 API Carte : Leaflet, https://www.openstreetmap.org/copyright
 
