@@ -10,6 +10,7 @@ Ce TP est une application permettant de calculer un itinéraire entre deux ville
 - 🚀 [Installation](#installation)
 - 🛠️ [Utilisation](#utilisation)
 - 🏗️ [Construit avec](#construit-avec)
+- 📚 [Langages et Framework](#langages-et-framework)
 
 
 ## Prérequis
@@ -40,7 +41,7 @@ Gaëtan Tiberghien
 
 Kevin Makhloufi
 
-### Langages & Frameworks
+## Langages & Frameworks
 Javascript
 
 React
