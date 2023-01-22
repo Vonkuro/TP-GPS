@@ -17,18 +17,34 @@ Ce TP est une application permettant de calculer un itinéraire entre deux ville
 
 Afin de pouvoir exécuter l'application sur votre poste, vous devez d'aborder installer les dépendances suivantes :
 
-  * NodeJS
-  
-  * React
+-NodeJs18
   
 ## Installation
 
 Pour installer le projet en local, selectionner le dossier dans lequel vous souhaitez installer le projet et lancez la commande suivante : 
 git clone https://github.com/Vonkuro/TP-GPS.git
 
-Après cette étape, pour lancer le projet : cd tp-gps-react
+En premier lieu, il faut installer les paquets node dans le dossier "tp-gps-react"
 
-Pour lancer l'application : npm start
+Dans ce dossier, lancer la commande : 
+
+npm update
+
+Puis rentrer dans le dossier "node-express" et lancer la commande : 
+
+npm update
+
+
+Lancement du service :
+Premièrement, ouvrez un terminal dans le dossier "node-express" et lancez la commande :
+
+npm start
+
+Puis, dans un second terminal, ouvrez le dossier "tp-gps-react" et lancez la commande :
+
+npm start
+
+L'url par défaut du service est : http://localhost:3000/
 
 ## Utilisation
 
@@ -52,8 +68,7 @@ Bootstrap 5
 
 API Carte : Leaflet, https://www.openstreetmap.org/copyright
 
-API Météo : https://public.opendatasoft.com/api/records/1.0/search/?dataset=arome-0025-sp1_sp2
-
+API Météo : https://public.opendatasoft.com/api
 
 
 
