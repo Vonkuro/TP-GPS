@@ -2,6 +2,7 @@ import React from 'react';
 import './Map.css';
 import cities from '../data/cities.json'
 import { MapContainer, TileLayer,Marker, Popup } from 'react-leaflet';
+import Routing from './Routing';
 
 function Map(){
     console.log(cities)
@@ -14,12 +15,13 @@ function Map(){
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
-            {cities.map(villes=>(
+            {/* {cities.map(villes=>(
                 <Marker key={villes.id}
                 position={[villes.gps.latitude, villes.gps.longitude]}>
                 </Marker>
 
-            ))} 
+            ))}  */}
+            <Routing/>
             
             
         </MapContainer>
