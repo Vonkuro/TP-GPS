@@ -16,13 +16,16 @@ Ce TP est une application permettant de calculer un itinéraire entre deux ville
 
 Afin de pouvoir exécuter l'application sur votre poste, vous devez d'aborder installer les dépendances suivantes :
   * NodeJS
+  
   * React
   
 ## Installation
 
 Pour installer le projet en local, selectionner le dossier dans lequel vous souhaitez installer le projet et lancez la commande suivante : 
 git clone https://github.com/Vonkuro/TP-GPS.git
+
 Après cette étape, pour lancer le projet : cd tp-gps-react
+
 Pour lancer l'application : npm start
 
 ## Utilisation
@@ -34,6 +37,7 @@ L'itinéraire et la météo des villes correspondantes s'afficheront en plus des
 ## Construit avec
 
 Gaëtan Tiberghien
+
 Kevin Makhloufi
 
 ### Langages & Frameworks
