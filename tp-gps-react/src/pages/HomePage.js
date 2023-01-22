@@ -1,6 +1,9 @@
 import SearchBar from "./searchbar/SearchBar";
 import React from "react";
 import InfoDisplay from "./infodisplay/InfoDisplay";
+import "./HomePage.css";
+import Map from './map/Map';
+
 
 class HomePage extends React.Component
 {
@@ -9,8 +12,17 @@ class HomePage extends React.Component
     {
         return (
         <>
-            <SearchBar/>
-            <InfoDisplay/>
+        <div className="homeContainer">
+            <div className="centerContainer">
+                <SearchBar/>
+                <Map/>
+            </div>
+            <div className="rightContainer">
+                <InfoDisplay/>
+            </div>
+        </div>
+        
+        
         </>
         );
     };

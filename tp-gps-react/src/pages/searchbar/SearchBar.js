@@ -10,6 +10,7 @@ import TextInput from 'react-autocomplete-input';
 import 'react-autocomplete-input/dist/bundle.css';
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import "./SearchBar.css";
 
 function SearchBar(props) {
 
@@ -44,7 +45,7 @@ function SearchBar(props) {
         console.log("form !");
     }
     return (
-        <>
+        <div className='searchContainer'>
         <form onSubmit={formHandler}>
         <label>Départ</label>
         <TextInput
@@ -65,7 +66,7 @@ function SearchBar(props) {
         <input type="submit" value="Envoyer"/>
         </form>
         
-        </>
+        </div>
     );
   }
 
