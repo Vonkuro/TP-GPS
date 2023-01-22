@@ -37,10 +37,14 @@ Gaëtan Tiberghien
 Kevin Makhloufi
 
 ### Langages & Frameworks
-Javascript ####
+Javascript
+
 React
+
 Bootstrap 5
+
 Leaflet : https://www.openstreetmap.org/copyright
+
 Météo : https://public.opendatasoft.com/api/records/1.0/search/?dataset=arome-0025-sp1_sp2&q=&rows=1&geofilter.distance="+latitude+"%2C"+longitude+"%2C1
 
 
