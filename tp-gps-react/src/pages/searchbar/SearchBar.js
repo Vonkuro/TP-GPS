@@ -55,7 +55,7 @@ function SearchBar(props) {
             options={getCities()} 
             minChars={1}
         />
-        <label>Destionnation</label>
+        <label>Destination</label>
         <TextInput
             name = "destination"
             Component="input"
