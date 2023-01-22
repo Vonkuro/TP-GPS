@@ -4,8 +4,7 @@ import cities from '../data/cities.json'
 import { MapContainer, TileLayer,Marker, Popup } from 'react-leaflet';
 import Routing from './Routing';
 
-function Map(){
-    console.log(cities)
+function Map(props){
     const positionLille = [50.629250, 3.057256]
     return (
         
@@ -21,7 +20,7 @@ function Map(){
                 </Marker>
 
             ))}  */}
-            <Routing/>
+            <Routing start ={ props.coordinate[0] } end = { props.coordinate[1]}/>
             
             
         </MapContainer>

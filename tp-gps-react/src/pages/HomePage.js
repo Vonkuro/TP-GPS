@@ -7,6 +7,21 @@ import Map from './map/Map';
 
 class HomePage extends React.Component
 {
+    constructor(props){
+        super(props);
+  
+        this.state = {
+          coordinate: [["Lille",50.6138111,3.0423599],["Paris",48.8640493,2.3310526]],
+        };
+        this.handles = {
+            coordinateHandler : this.coordinateHandler.bind(this),
+        }
+    }
+
+
+    coordinateHandler(value){
+        this.setState({coordinate : value});
+    };
 
     render()
     {
@@ -14,11 +29,11 @@ class HomePage extends React.Component
         <>
         <div className="homeContainer">
             <div className="centerContainer">
-                <SearchBar/>
-                <Map/>
+                <SearchBar handler={this.handles.coordinateHandler}/>
+                <Map coordinate= {this.state.coordinate}/>
             </div>
             <div className="rightContainer">
-                <InfoDisplay/>
+                <InfoDisplay coordinate= {this.state.coordinate}/>
             </div>
         </div>
         

@@ -15,6 +15,8 @@ import "./SearchBar.css";
 function SearchBar(props) {
 
     const [cities, setCities] = useState([]);
+    const [startCity, setStartCity] = useState([]);
+    const [endCity, setEndCity] = useState([]);
 
     useEffect( ()=> {
         async function fetchDate(){
@@ -29,7 +31,7 @@ function SearchBar(props) {
         try{
             let names = [];
             cities.forEach(cities => {
-                names.push(cities.name + "; " + cities.zip_code);
+                names.push(cities.name + ": " + cities.insee_code);
             } );
             return names;
         }
@@ -42,7 +44,28 @@ function SearchBar(props) {
     const formHandler = (event) => 
     {
         event.preventDefault();
-        console.log("form !");
+        props.handler([startCity,endCity]);
+    }
+
+    const startHandler = (value) =>
+    {
+        setStartCity(localFinder(value));
+    }
+
+    const endHandler = (value) =>
+    {
+        setEndCity(localFinder(value));
+    }
+
+    const localFinder = (value) =>
+    {
+        for (const index in cities)
+        {
+            if (value.includes(cities[index].insee_code))
+            {
+                return [cities[index].name, cities[index].gps_lat, cities[index].gps_lng];
+            }
+        }
     }
     return (
         <div className='searchContainer'>
@@ -54,6 +77,7 @@ function SearchBar(props) {
             trigger={[""]} 
             options={getCities()} 
             minChars={1}
+            onSelect = {(value) =>{startHandler(value)}}
         />
         <label>Destination</label>
         <TextInput
@@ -62,8 +86,9 @@ function SearchBar(props) {
             trigger={[""]} 
             options={getCities()} 
             minChars={1}
+            onSelect = {(value) =>{endHandler(value)}}
         />
-        <input type="submit" value="Envoyer"/>
+        <input type="submit" value="Voyager"/>
         </form>
         
         </div>
