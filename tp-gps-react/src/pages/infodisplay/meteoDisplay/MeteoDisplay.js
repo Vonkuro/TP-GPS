@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import './MeteoDisplay.css'
 
 function MeteoDisplay(props)
 {
@@ -47,10 +48,12 @@ function MeteoDisplay(props)
 
     return (
         <>
+        <div className="meteo">
         <p>Météo à {props.city}</p>
         <p>Température : {temperature}°C</p>
         <p>Précipitations : {precipitations}%</p>
         <p>Vitesse du vent : {wind}m/s</p>
+        </div>
         </>
     );
 }
